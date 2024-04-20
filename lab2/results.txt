@@ -1,0 +1,5 @@
+prenty_T = 4000
+katowniki_T = 2800
+ceowniki_T = 0
+Zysk = 198000
+

@@ -1,11 +1,11 @@
 # Zmienne decyzyjne
-var prenty_h >= 0, integer;  
-var katowniki_h >= 0, integer;  
-var ceowniki_h >= 0, integer;  
+var prenty_h >= 0;  
+var katowniki_h >= 0;  
+var ceowniki_h >= 0;  
 
-var prenty_T >= 0, integer;  
-var katowniki_T >= 0, integer;  
-var ceowniki_T >= 0, integer;  
+var prenty_T >= 0;  
+var katowniki_T >= 0;  
+var ceowniki_T >= 0;  
 
 # Funkcja celu
 maximize Zysk:

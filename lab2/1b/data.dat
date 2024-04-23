@@ -1,0 +1,8 @@
+set PRODUKTY := prenty katowniki ceowniki;
+
+param: tonaz_na_godzine cena max_ton :=
+prenty		200			32	 4000
+katowniki	140			52	 3000
+ceowniki	120			03	 2500;
+param czas := 40;
+param max_maszyny := 2;

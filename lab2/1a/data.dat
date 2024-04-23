@@ -1,0 +1,7 @@
+set ITEMS := Bars Angles Beams;  # Definicja produktów
+
+param: ProductionRate UnitPrice ProductionLimit :=
+Bars		200	32	4000
+Angles		140	52	3000
+Beams		120	03	2500;
+param AvailableTime := 40;  # Dostępny czas na produkcję

@@ -9,8 +9,8 @@ var Start_momenty {ZADANIA} >= 0;
 maximize Times:
   sum {z in ZADANIA} Start_momenty[z];
 
-subject to Ograniczenia_Poczatkowe:
-  Start_momenty['Dodatkowe'] = Czas_min - CZASY['Dodatkowe'];
+##subject to Ograniczenia_Poczatkowe:
+  ##Start_momenty['Dodatkowe'] = Czas_min - CZASY['Dodatkowe'];
 
 subject to Ograniczenia_OdGory {o in ZADANIA}:
   Start_momenty[o] + CZASY[o] <= Czas_min;

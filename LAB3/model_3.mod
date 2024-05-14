@@ -16,4 +16,4 @@ subject to Ograniczenia_Poczatkowe:
   Start_momenty['Wylanie_Fundamentow'] = 0;
 
 subject to Ograniczenia_Koncowe {i in ZADANIA}:
-  Czas_min >= Start_momenty['Dodatkowe'] + CZASY['Wylanie_Fundamentow'];
+  Czas_min >= Start_momenty['Dodatkowe'] + CZASY['Dodatkowe'];

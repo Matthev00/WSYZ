@@ -1,0 +1,47 @@
+data;
+
+set ZADANIA := Wylanie_Fundamentow A_1 A_2 A_3 A_4
+					B_1 B_2 B_3 B_4
+					C_1 C_2 C_3 C_4
+					D_1 D_2 D_3 D_4
+					E_1 E_2 E_3 E_4
+					Alejki Zielen Dodatkowe ;
+
+set POWIAZANIA := 	(Wylanie_Fundamentow, A_1) (Wylanie_Fundamentow, B_1)
+					(A_1, A_2) (A_2, C_1) (A_2, A_3) (A_3, A_4)
+	             	(B_1, B_2) (B_2, C_1) (B_2, B_3) (B_3, B_4)
+	             	(C_1, C_2) (C_2, C_3) (C_2, E_1) (C_3, C_4)
+	             	(D_1, D_2) (C_2, D_1) (D_2, D_3) (D_3, D_4)
+	             	(E_1, E_2) (E_2, E_3) (E_3, E_4)
+	             	(A_3, Alejki) (B_3, Alejki) (C_3, Alejki) (D_3, Alejki) (E_3, Alejki)
+             		(A_3, Zielen) (B_3, Zielen) (C_3, Zielen) (D_3, Zielen) (E_3, Zielen)
+             		(Alejki, Dodatkowe) (Zielen, Dodatkowe)
+             		(A_4, Dodatkowe) (B_4, Dodatkowe)	(C_4, Dodatkowe) (D_4, Dodatkowe) (E_4, Dodatkowe)
+             		;
+
+param: CZASY :=
+	Wylanie_Fundamentow		50
+	A_1			60
+	A_2			40
+	A_3			20
+	A_4			70
+	B_1			50
+	B_2			40
+	B_3			30
+	B_4			50
+	C_1			50
+	C_2			40
+	C_3			30
+	C_4			50
+	D_1			70
+	D_2			50
+	D_3			30
+	D_4			30
+	E_1			70
+	E_2			50
+	E_3			30
+	E_4			30
+	Alejki		25
+	Zielen		20
+	Dodatkowe		30 ;
+

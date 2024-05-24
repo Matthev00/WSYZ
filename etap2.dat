@@ -12,14 +12,14 @@ param zapotrzebowanie:
 	P3  160    	  70      190	 90
 	P4  260    	  50      60	 100
 	P5  250    	  230     190	 110
-	P6  200    	  150     60	 90 ;
+	P6  200    	  140     60	 90 ;
 	
 param pojemnosc_magazynu := 
 	M1 800
 	M2 1200
 	M3 750;
 	
-param koszt_km := 4 ;
+param koszt_km := 5 ;
 
 param tydzien := 52 ;
 

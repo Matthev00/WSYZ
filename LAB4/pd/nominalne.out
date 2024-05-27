@@ -1,0 +1,10 @@
+total_time = 38
+
+: start_time end_time    :=
+A       0         8
+B       0        17
+C       8        17
+D      17        33
+E      33        38
+;
+

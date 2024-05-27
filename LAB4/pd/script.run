@@ -1,0 +1,2 @@
+reset; option solver cplex; model model.mod; data data.dat; solve;
+display total_time, start_time, end_time, task_budget;

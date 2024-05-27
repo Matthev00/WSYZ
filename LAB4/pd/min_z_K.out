@@ -1,0 +1,10 @@
+total_time = 37
+
+: start_time end_time task_budget    :=
+A       0         8         0
+B       0        16        75
+C       8        17         0
+D      16        32         0
+E      32        37         0
+;
+

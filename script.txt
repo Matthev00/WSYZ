@@ -1,3 +1,0 @@
-reset; option solver cbc; model etap2.mod; data etap2.dat; solve;
-display Laczny_koszt_operacji, roczny_transport_do_magazynu, tygodniowy_transport_do_sklepu;
-display Laczny_koszt_operacji, roczny_transport_do_magazynu, tygodniowy_transport_do_sklepu > outcome.txt;

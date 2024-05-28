@@ -20,15 +20,6 @@ minimize total_time_goal:
 s.t. total_time_const {t in TASKS}:
   total_time >= end_time[t];
 
-#min  
-#s.t. link_order_const {(f, s) in LINKS}:
-#  start_time[f] + min_duration[f] <= start_time[s];
-
-#nom
-#s.t. link_order_const {(f, s) in LINKS}:
-#  start_time[f] + default_duration[f] <= start_time[s];
-
-# min z k
 s.t. link_order_const {(f, s) in LINKS}:
  start_time[f] + real_duration[f] <= start_time[s];
 
@@ -44,14 +35,6 @@ s.t. task_budget_const {t in TASKS}:
 s.t. budget_const:
   sum {t in TASKS} task_budget[t] <= budget;
 
-#nom
-#s.t. end_time_const {t in TASKS}:
-#  start_time[t] + default_duration[t] = end_time[t];
-
-#min z k
 s.t. end_time_const {t in TASKS}:
   start_time[t] + real_duration[t] = end_time[t];
 
-# min
-#s.t. end_time_const {t in TASKS}:
-#  start_time[t] + min_duration[t] = end_time[t];
